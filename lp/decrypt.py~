@@ -3,7 +3,7 @@ def dec(s,c1,c2,n1,n2,q):
 	for x in range(n1):
 		n=0
 		for y in range(n2):
-			p[x] = int((p[x] + (s[x][y]*c1[n]))%q)
+			p[x] = int((p[x] + (s[x][y]*c1[n]))%(q/8))
 		n=n+1
 
 	print p
